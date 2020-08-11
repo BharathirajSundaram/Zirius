@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite"><test verbose="2" preserve-order="true" name="C:/Users/Administrator/IdeaProjects/Selenium/Zirius/src/test/java/com/zirius/qa/tests/HomePageTest.java">
+    <classes>
+        <class name="com.zirius.qa.tests.HomePageTest">
+            <methods><include name="getAboutUsContent"/></methods>
+        </class>
+    </classes>
+</test>
+</suite>
