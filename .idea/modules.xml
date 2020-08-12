@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ZiriusTest.iml" filepath="$PROJECT_DIR$/ZiriusTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zirius.iml" filepath="$PROJECT_DIR$/Zirius.iml" />
     </modules>
   </component>
 </project>

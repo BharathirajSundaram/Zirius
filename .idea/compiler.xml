@@ -9,6 +9,8 @@
         <module name="Zirius" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="Zirius" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

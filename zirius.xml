@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Zirius Suite" >
+
+    <test name="Zirius Test Case-1" >
+
+        <classes>
+
+            <class name="com.zirius.qa.tests.HomePageTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>

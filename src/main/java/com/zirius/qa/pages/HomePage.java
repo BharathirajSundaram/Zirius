@@ -114,6 +114,7 @@ public class HomePage extends TestBase {
                     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@title='chat widget'][2]")));
                     WebDriver framdirever = driver.switchTo().frame( driver.findElement(By.xpath("//iframe[@title='chat widget'][2]")));
                     WebElement maximizeChat = framdirever.findElement(By.xpath("//span[@id='maximizeChat']"));
+                    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(maximizeChat));
                     maximizeChat.click();
                     ChatName.sendKeys(cName);
                     return true;
@@ -163,7 +164,7 @@ public class HomePage extends TestBase {
         System.out.println(">>>>>>>>Before Switch!!!");
         int size = driver.findElements(By.tagName("iframe")).size();
         System.out.println(size);
-        //driver.switchTo().frame(ChatIframe);
+        driver.switchTo().frame(ChatIframe);
         System.out.println(">>>>>>>>After Switch!!!");
         String frameElements = driver.findElement(By.xpath("//*[@title='chat widget'][1]")).getText();
         System.out.println(frameElements);
