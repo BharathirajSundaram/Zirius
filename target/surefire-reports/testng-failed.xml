@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Zirius Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Zirius Test Case-1(failed)" verbose="0">
+    <classes>
+      <class name="com.zirius.qa.tests.HomePageTest">
+        <methods>
+          <include name="fillContactUsFormField" invocation-numbers="0 1 2 3 4"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.zirius.qa.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Zirius Test Case-1(failed) -->
+</suite> <!-- Failed suite [Zirius Suite] -->

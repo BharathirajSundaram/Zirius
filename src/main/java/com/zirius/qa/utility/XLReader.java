@@ -48,21 +48,5 @@ public class XLReader extends TestBase {
         return cellData;
     }
 
-    public void setCellData(String excelPath, String sheetName, int rowNum, int cellNum, String data) throws Exception {
-
-        fileInputStream = new FileInputStream(excelPath);
-
-        xssfWorkbook = new XSSFWorkbook(fileInputStream);
-        xssfSheet = xssfWorkbook.getSheet(sheetName);
-        xssfRow = xssfSheet.getRow(rowNum);
-        xssfCell = xssfRow.getCell(cellNum);
-        xssfCell.setCellValue(data);
-        fileOutputStream = new FileOutputStream(excelPath);
-        xssfWorkbook.write(fileOutputStream);
-        xssfWorkbook.close();
-        fileInputStream.close();
-        fileOutputStream.close();
-    }
-
 
 }

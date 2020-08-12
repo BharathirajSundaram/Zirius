@@ -7,16 +7,14 @@ import java.io.File;
 
 public class ReadFromDataProvider extends TestBase {
     XLReader xlReader;
-    String excelPath = "."+File.separator+"src"+File.separator+"main"+File.separator+ "java"+File.separator+"com"+File.separator+"zirius"+File.separator+"qa"+File.separator+"testdata"+File.separator+"ContactUsFormTestData.xlsx";
-
-
+    String excelPath = "." + File.separator + "src" + File.separator + "main" + File.separator + "java" + File.separator + "com" + File.separator + "zirius" + File.separator + "qa" + File.separator + "testdata" + File.separator + "ContactUsFormTestData.xlsx";
 
 
     @DataProvider(name = "ContactUsFormField")
     public Object[][] ContactUsFormField() throws Exception {
 
         File file = new File(".//testdata//ContactUsFormTestData.xlsx");
-        System.out.println(file.getAbsolutePath() +" \n"+ file.getCanonicalPath()+" \n" + file.getPath());
+        System.out.println(file.getAbsolutePath() + " \n" + file.getCanonicalPath() + " \n" + file.getPath());
         xlReader = new XLReader(excelPath, "ContactUs");
 
         int rowCount = xlReader.getRowCount();

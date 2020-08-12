@@ -1,0 +1,5 @@
+com\zirius\qa\pages\HomePage.class
+com\zirius\qa\utility\Timeouts.class
+com\zirius\qa\utility\ReadFromDataProvider.class
+com\zirius\qa\pages\TestBase.class
+com\zirius\qa\utility\XLReader.class

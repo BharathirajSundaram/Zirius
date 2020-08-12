@@ -13,7 +13,7 @@ import java.util.List;
 
 public class HomePage extends TestBase {
 
-    private WebDriverWait wait= new WebDriverWait(driver,60);
+    private WebDriverWait wait = new WebDriverWait(driver, 60);
     private JavascriptExecutor js = (JavascriptExecutor) driver;
     private Actions actions = new Actions(driver);
 
@@ -65,36 +65,35 @@ public class HomePage extends TestBase {
     }
 
 
-    public void clickOnHeaderNavHome(){
+    public void clickOnHeaderNavHome() {
         wait.until(ExpectedConditions.elementToBeClickable(HeaderNavHome)).click();
 
     }
 
-    public void clickOnHeaderNavAbout(){
+    public void clickOnHeaderNavAbout() {
         wait.until(ExpectedConditions.elementToBeClickable(HeaderNavAbout)).click();
     }
 
 
-
-    public String getAboutUsHeader(){
+    public String getAboutUsHeader() {
         String AboutUsHeader = getHeaderNavAboutHeader.getText();
         return AboutUsHeader;
     }
 
 
-    public String getAboutUsContentDescription(){
+    public String getAboutUsContentDescription() {
         String AboutUsDescription = getHeaderNavAboutDescription.getText();
         return AboutUsDescription;
-        }
+    }
 
 
-    public void clickOnHeaderNavJobs(){
+    public void clickOnHeaderNavJobs() {
         wait.until(ExpectedConditions.elementToBeClickable(HeaderNavJobs)).click();
     }
 
 
-    public String getJobsHeader(){
-        js.executeScript("arguments[0].scrollIntoView();",getHeaderNavJobsHeader);
+    public String getJobsHeader() {
+        js.executeScript("arguments[0].scrollIntoView();", getHeaderNavJobsHeader);
         String jobsHeader = getHeaderNavJobsHeader.getText();
         return jobsHeader;
     }
@@ -106,15 +105,15 @@ public class HomePage extends TestBase {
     }
 
 
-    public void clickOnChatIcon(String cName) throws Exception{
+    public void clickOnChatIcon(String cName) throws Exception {
 
         new WebDriverWait(driver, 10)
                 .ignoring(StaleElementReferenceException.class)
                 .until(driver -> {
                     wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@title='chat widget'][2]")));
-                    WebDriver framdirever = driver.switchTo().frame( driver.findElement(By.xpath("//iframe[@title='chat widget'][2]")));
+                    WebDriver framdirever = driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='chat widget'][2]")));
                     WebElement maximizeChat = framdirever.findElement(By.xpath("//span[@id='maximizeChat']"));
-                    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(maximizeChat));
+                    //wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(maximizeChat));
                     maximizeChat.click();
                     ChatName.sendKeys(cName);
                     return true;
@@ -146,7 +145,7 @@ public class HomePage extends TestBase {
                System.out.println(id+" Failure");
            }*/
 
-       }
+    }
         /*System.out.println(a);
        for(int i=0;i<a.size();i++){
        }
@@ -158,8 +157,7 @@ public class HomePage extends TestBase {
        Thread.sleep(2000);*/
 
 
-
-    public void searchIframe(){
+    public void searchIframe() {
 
         System.out.println(">>>>>>>>Before Switch!!!");
         int size = driver.findElements(By.tagName("iframe")).size();
@@ -182,27 +180,26 @@ public class HomePage extends TestBase {
         actions.moveToElement(ChatName).sendKeys(Name).build().perform();
     }
 
-    public void setChatEmail(String Email){
+    public void setChatEmail(String Email) {
         wait.until(ExpectedConditions.elementToBeClickable(ChatEmail)).clear();
 
         actions.moveToElement(ChatEmail).sendKeys(Email);
     }
 
-    public void setChatMessage(String Message){
+    public void setChatMessage(String Message) {
         wait.until(ExpectedConditions.elementToBeClickable(ChatEmail)).clear();
         actions.moveToElement(ChatMessage).sendKeys(Message);
     }
 
 
-    public void clickOnSubmit(){
+    public void clickOnSubmit() {
         btnSubmit.click();
     }
 
 
-    public void clickOnHeaderNavContact(){
+    public void clickOnHeaderNavContact() {
         HeaderNavContact.click();
     }
-
 
 
 }
