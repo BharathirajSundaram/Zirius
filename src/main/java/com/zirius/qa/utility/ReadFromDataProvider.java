@@ -13,8 +13,6 @@ public class ReadFromDataProvider extends TestBase {
     @DataProvider(name = "ContactUsFormField")
     public Object[][] ContactUsFormField() throws Exception {
 
-        File file = new File(".//testdata//ContactUsFormTestData.xlsx");
-        System.out.println(file.getAbsolutePath() + " \n" + file.getCanonicalPath() + " \n" + file.getPath());
         xlReader = new XLReader(excelPath, "ContactUs");
 
         int rowCount = xlReader.getRowCount();

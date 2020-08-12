@@ -8,7 +8,6 @@ import java.io.*;
 
 public class XLReader extends TestBase {
     private FileInputStream fileInputStream;
-    private FileOutputStream fileOutputStream;
     private XSSFWorkbook xssfWorkbook;
     private XSSFSheet xssfSheet;
     private XSSFCell xssfCell;

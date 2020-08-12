@@ -8,67 +8,55 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+
 public class HomePageTest extends TestBase {
 
     private HomePage homePage;
-    private SoftAssert Assert= new SoftAssert();
 
 
-    public HomePageTest(){
+    public HomePageTest() {
         super();
     }
 
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() {
         initializeBrowser();
-        homePage= new HomePage();
+        homePage = new HomePage();
 
     }
 
-    @Test
-    public void verifyAboutUsContent(){
+    @Test(priority = 1)
+    public void verifyAboutUsContent() {
         homePage.clickOnHeaderNavAbout();
-        String aboutUsHeader = homePage.getAboutUsHeader();
-        String aboutUsDescription=homePage.getAboutUsContentDescription();
-        logger.info(aboutUsHeader+"\n"+aboutUsDescription);
-        System.out.println(aboutUsHeader+"\n"+aboutUsDescription);
-        Assert.assertEquals(aboutUsHeader,System.getProperty("aboutusHeader"),"About Us Header:");
-        Assert.assertEquals(aboutUsDescription,System.getProperty("aboutusDescription"),"About Us Header:");
-    }
-
-    @Test
-    public void verifyJobsContent(){
-        String jobsHeader = homePage.getJobsHeader();
-        String jobsDescription=homePage.getJobsContentDescription();
-        logger.info(jobsHeader+"\n"+jobsDescription);
-        System.out.println(jobsHeader+"\n"+jobsDescription);
-        Assert.assertEquals(jobsHeader,System.getProperty("aboutusHeader"),"About Us Header:");
-        Assert.assertEquals(jobsDescription,System.getProperty("aboutusDescription"),"About Us Header:");
+        homePage.verifyAboutUsHeader();
+        homePage.verifyAboutUsDescription();
 
     }
 
-    @Test(dataProvider = "ContactUsFormField",dataProviderClass = ReadFromDataProvider.class)
-    public void fillContactUsFormField(String Name, String Email, String Message) throws Exception{
-        homePage.clickOnHeaderNavAbout();
-        String aboutUsHeader = homePage.getAboutUsHeader();
-        String aboutUsDescription=homePage.getAboutUsContentDescription();
-        logger.info(aboutUsHeader+"\n"+aboutUsDescription);
-        System.out.println(aboutUsHeader+"\n"+aboutUsDescription);
-        String jobsHeader = homePage.getJobsHeader();
-        String jobsDescription=homePage.getJobsContentDescription();
-        logger.info(jobsHeader+"\n"+jobsDescription);
-        System.out.println(jobsHeader+"\n"+jobsDescription);
-        homePage.clickOnChatIcon(Name);
+    @Test(priority = 2)
+    public void verifyJobsContent() {
+        homePage.scrolltoJobsHeader();
+        homePage.verifyJobsHeader();
+        homePage.verifyJobsDescription();
+    }
+
+    @Test(dataProvider = "ContactUsFormField", dataProviderClass = ReadFromDataProvider.class, priority = 3)
+    public void fillContactUsFormField(String Name, String Email, String Message) throws Exception {
+        homePage.clickOnChatIcon();
+        homePage.clickOnChatPopUp();
         homePage.setChatName(Name);
         homePage.setChatEmail(Email);
         homePage.setChatMessage(Message);
         homePage.clickOnSubmit();
+        homePage.verifySuccessMessage();
+
     }
 
 
     @AfterMethod
     public void tearDown() {
+        new SoftAssert().assertAll();
         driver.quit();
     }
 

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.zirius.qa.tests.HomePageTest">
         <methods>
-          <include name="fillContactUsFormField" invocation-numbers="0 1 2 3 4"/>
+          <include name="verifyAboutUsContent"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

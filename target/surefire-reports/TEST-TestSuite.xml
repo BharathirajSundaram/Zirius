@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="360.312" tests="7" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="244.434" tests="7" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="webdriver.chrome.driver" value="C:\Users\Administrator\.m2\repository\webdriver\chromedriver\win32\84.0.4147.30\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\surefire15284727302496247122\surefirebooter3424932545066405287.jar C:\Users\Administrator\AppData\Local\Temp\surefire15284727302496247122 2020-08-12T12-56-11_791-jvmRun1 surefire1672411646785511710tmp surefire_013418774437353570902tmp"/>
+    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\surefire18230745140763303479\surefirebooter6936125164288662927.jar C:\Users\Administrator\AppData\Local\Temp\surefire18230745140763303479 2020-08-13T01-53-31_538-jvmRun1 surefire17401037669974489685tmp surefire_017508383283135098217tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Administrator\IdeaProjects\Selenium\ZiriusTest\target\test-classes;C:\Users\Administrator\IdeaProjects\Selenium\ZiriusTest\target\classes;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Administrator\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Administrator\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Administrator\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Administrator\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\Administrator\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Administrator\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Administrator\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Administrator\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Administrator\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Administrator\.m2\repository\io\github\bonigarcia\webdrivermanager\3.4.0\webdrivermanager-3.4.0.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Administrator\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\Administrator\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\Administrator\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\surefire15284727302496247122\surefirebooter3424932545066405287.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\surefire18230745140763303479\surefirebooter6936125164288662927.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="13.0.1+9"/>
@@ -56,201 +56,95 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="fillContactUsFormField[FirstNameOne, firstname1@gmail.com, Message One](1)" classname="com.zirius.qa.tests.HomePageTest" time="35.425">
-    <failure message="Expected condition failed: waiting for com.zirius.qa.pages.HomePage$$Lambda$482/0x0000000800e50840@53ac845a (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.zirius.qa.pages.HomePage$$Lambda$482/0x0000000800e50840@53ac845a (tried for 10 second(s) with 500 milliseconds interval)
-	at com.zirius.qa.tests.HomePageTest.fillContactUsFormField(HomePageTest.java:61)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='offline0Field' and @title='Name']"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BHARATHIRAJ-PC', ip: '192.168.43.58', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57684}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 63a554216c57200896cd53101e3517b7
-*** Element info: {Using=xpath, value=//*[@id='offline0Field' and @title='Name']}
-	at com.zirius.qa.tests.HomePageTest.fillContactUsFormField(HomePageTest.java:61)
+  <testcase name="verifyAboutUsContent" classname="com.zirius.qa.tests.HomePageTest" time="4.195">
+    <failure message="The following asserts failed:&#10;	expected [About U] but found [About Us.]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [About U] but found [About Us.]
+	at com.zirius.qa.tests.HomePageTest.verifyAboutUsContent(HomePageTest.java:34)
 ]]></failure>
+    <system-out><![CDATA[.\src\main\resources\config.properties
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 1118
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 13, 2020 1:53:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyJobsContent" classname="com.zirius.qa.tests.HomePageTest" time="0">
+    <system-out><![CDATA[.\src\main\resources\config.properties
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 42703
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 13, 2020 1:55:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="fillContactUsFormField[FirstNameOne, firstname1@gmail.com, Message One](1)" classname="com.zirius.qa.tests.HomePageTest" time="2.624">
     <system-out><![CDATA[C:\Users\Administrator\IdeaProjects\Selenium\ZiriusTest\.\testdata\ContactUsFormTestData.xlsx 
 C:\Users\Administrator\IdeaProjects\Selenium\ZiriusTest\testdata\ContactUsFormTestData.xlsx 
 .\testdata\ContactUsFormTestData.xlsx
 Row Count: 6 Column Count: 3
 .\src\main\resources\config.properties
-About Us.
-Zerp Labs is a wholly owned subsidiary of a Norwegian software company, established in 2004.
-We are developers of world class enterprise products within Accounting, Project Management, Retail, Commerce, and Payroll in Norwegian market.
-JOBS.
-Are you our new colleague?
-
-We are looking for talented individuals, with passion for technology
 ]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 2161
+    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 15401
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 12, 2020 12:56:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-log4j:WARN No appenders could be found for logger (com.zirius.qa.pages.TestBase).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-]]></system-err>
-  </testcase>
-  <testcase name="fillContactUsFormField[FirstNameTwo, firstname2@gmail.com, Message Two](2)" classname="com.zirius.qa.tests.HomePageTest" time="9.473">
-    <failure message="Expected condition failed: waiting for com.zirius.qa.pages.HomePage$$Lambda$482/0x0000000800e50840@4da9f723 (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.zirius.qa.pages.HomePage$$Lambda$482/0x0000000800e50840@4da9f723 (tried for 10 second(s) with 500 milliseconds interval)
-	at com.zirius.qa.tests.HomePageTest.fillContactUsFormField(HomePageTest.java:61)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='offline0Field' and @title='Name']"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BHARATHIRAJ-PC', ip: '192.168.43.58', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57891}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 415ff38aea4320b4d6163066f0f1d9ad
-*** Element info: {Using=xpath, value=//*[@id='offline0Field' and @title='Name']}
-	at com.zirius.qa.tests.HomePageTest.fillContactUsFormField(HomePageTest.java:61)
-]]></failure>
-    <system-out><![CDATA[.\src\main\resources\config.properties
-About Us.
-Zerp Labs is a wholly owned subsidiary of a Norwegian software company, established in 2004.
-We are developers of world class enterprise products within Accounting, Project Management, Retail, Commerce, and Payroll in Norwegian market.
-JOBS.
-Are you our new colleague?
-
-We are looking for talented individuals, with passion for technology
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 42514
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Aug 12, 2020 12:58:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 13, 2020 1:55:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="fillContactUsFormField[FirstNameThree, firstname3@gmail.com, Message Three](3)" classname="com.zirius.qa.tests.HomePageTest" time="20.394">
-    <failure message="Expected condition failed: waiting for com.zirius.qa.pages.HomePage$$Lambda$482/0x0000000800e50840@6b3f6585 (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.zirius.qa.pages.HomePage$$Lambda$482/0x0000000800e50840@6b3f6585 (tried for 10 second(s) with 500 milliseconds interval)
-	at com.zirius.qa.tests.HomePageTest.fillContactUsFormField(HomePageTest.java:61)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='offline0Field' and @title='Name']"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BHARATHIRAJ-PC', ip: '192.168.43.58', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58067}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 85d00edcbba8f0fbcd25feba2f8514ce
-*** Element info: {Using=xpath, value=//*[@id='offline0Field' and @title='Name']}
-	at com.zirius.qa.tests.HomePageTest.fillContactUsFormField(HomePageTest.java:61)
-]]></failure>
+  <testcase name="fillContactUsFormField[FirstNameTwo, firstname2@gmail.com, Message Two](2)" classname="com.zirius.qa.tests.HomePageTest" time="4.242">
     <system-out><![CDATA[.\src\main\resources\config.properties
-About Us.
-Zerp Labs is a wholly owned subsidiary of a Norwegian software company, established in 2004.
-We are developers of world class enterprise products within Accounting, Project Management, Retail, Commerce, and Payroll in Norwegian market.
-JOBS.
-Are you our new colleague?
-
-We are looking for talented individuals, with passion for technology
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 37564
+    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 1803
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 12, 2020 1:00:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 13, 2020 1:56:30 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="fillContactUsFormField[FirstNameFour, firstname4@gmail.com, Message Four](4)" classname="com.zirius.qa.tests.HomePageTest" time="20.596">
-    <failure message="Expected condition failed: waiting for com.zirius.qa.pages.HomePage$$Lambda$482/0x0000000800e50840@6dd1c3ed (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.zirius.qa.pages.HomePage$$Lambda$482/0x0000000800e50840@6dd1c3ed (tried for 10 second(s) with 500 milliseconds interval)
-	at com.zirius.qa.tests.HomePageTest.fillContactUsFormField(HomePageTest.java:61)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='offline0Field' and @title='Name']"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BHARATHIRAJ-PC', ip: '192.168.43.58', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58161}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 82e4e25b89f565e552683129be326102
-*** Element info: {Using=xpath, value=//*[@id='offline0Field' and @title='Name']}
-	at com.zirius.qa.tests.HomePageTest.fillContactUsFormField(HomePageTest.java:61)
-]]></failure>
+  <testcase name="fillContactUsFormField[FirstNameThree, firstname3@gmail.com, Message Three](3)" classname="com.zirius.qa.tests.HomePageTest" time="3.769">
     <system-out><![CDATA[.\src\main\resources\config.properties
-About Us.
-Zerp Labs is a wholly owned subsidiary of a Norwegian software company, established in 2004.
-We are developers of world class enterprise products within Accounting, Project Management, Retail, Commerce, and Payroll in Norwegian market.
-JOBS.
-Are you our new colleague?
-
-We are looking for talented individuals, with passion for technology
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 36681
+    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 35542
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 12, 2020 1:00:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 13, 2020 1:56:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="fillContactUsFormField[FirstNameFive, firstname5@gmail.com, Message Five](5)" classname="com.zirius.qa.tests.HomePageTest" time="19.203">
-    <failure message="Expected condition failed: waiting for com.zirius.qa.pages.HomePage$$Lambda$482/0x0000000800e50840@3e67f5f2 (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.zirius.qa.pages.HomePage$$Lambda$482/0x0000000800e50840@3e67f5f2 (tried for 10 second(s) with 500 milliseconds interval)
-	at com.zirius.qa.tests.HomePageTest.fillContactUsFormField(HomePageTest.java:61)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='offline0Field' and @title='Name']"}
-  (Session info: chrome=84.0.4147.105)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'BHARATHIRAJ-PC', ip: '192.168.43.58', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 3b52fc64d5f215f4c5158730b687beaa
-*** Element info: {Using=xpath, value=//*[@id='offline0Field' and @title='Name']}
-	at com.zirius.qa.tests.HomePageTest.fillContactUsFormField(HomePageTest.java:61)
-]]></failure>
+  <testcase name="fillContactUsFormField[FirstNameFour, firstname4@gmail.com, Message Four](4)" classname="com.zirius.qa.tests.HomePageTest" time="2.466">
     <system-out><![CDATA[.\src\main\resources\config.properties
-About Us.
-Zerp Labs is a wholly owned subsidiary of a Norwegian software company, established in 2004.
-We are developers of world class enterprise products within Accounting, Project Management, Retail, Commerce, and Payroll in Norwegian market.
-JOBS.
-Are you our new colleague?
-
-We are looking for talented individuals, with passion for technology
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 13944
+    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 38364
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 12, 2020 1:01:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 13, 2020 1:57:11 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="verifyAboutUsContent" classname="com.zirius.qa.tests.HomePageTest" time="0.02">
+  <testcase name="fillContactUsFormField[FirstNameFive, firstname5@gmail.com, Message Five](5)" classname="com.zirius.qa.tests.HomePageTest" time="0">
     <system-out><![CDATA[.\src\main\resources\config.properties
-About Us.
-Zerp Labs is a wholly owned subsidiary of a Norwegian software company, established in 2004.
-We are developers of world class enterprise products within Accounting, Project Management, Retail, Commerce, and Payroll in Norwegian market.
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 40546
+    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 45568
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 12, 2020 1:01:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="verifyJobsContent" classname="com.zirius.qa.tests.HomePageTest" time="1.674">
-    <system-out><![CDATA[.\src\main\resources\config.properties
-About Us.
-Zerp Labs is a wholly owned subsidiary of a Norwegian software company, established in 2004.
-We are developers of world class enterprise products within Accounting, Project Management, Retail, Commerce, and Payroll in Norwegian market.
-]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 47778
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Aug 12, 2020 1:01:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 13, 2020 1:57:24 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>

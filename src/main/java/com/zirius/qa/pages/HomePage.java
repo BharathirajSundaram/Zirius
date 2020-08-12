@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.asserts.SoftAssert;
 
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class HomePage extends TestBase {
     private WebDriverWait wait = new WebDriverWait(driver, 60);
     private JavascriptExecutor js = (JavascriptExecutor) driver;
     private Actions actions = new Actions(driver);
+    private SoftAssert Assert = new SoftAssert();
 
     @FindBy(xpath = "//a[text()='Home']")
     WebElement HeaderNavHome;
@@ -42,23 +44,37 @@ public class HomePage extends TestBase {
     @FindBy(xpath = "//li[@id='menu-item-537']")
     WebElement HeaderNavContact;
 
-    @FindBy(xpath = "//*[@id='tawkchat-minified-box' and @class='round']")
+    @FindBy(xpath = "//*[@id='elementor-device-mode']//following::div//following::iframe[1]")
+    WebElement ChatIconFrame;
+
+    @FindBy(xpath = "//*[@id='maximizeChat' and @class='appear']")
     WebElement ChatIcon;
+
 
     @FindBy(xpath = "//span[@id='elementor-device-mode']//following::iframe[1]")
     WebElement ChatIframe;
 
-    @FindBy(xpath = "//*[@id='offline0Field' and @title='Name']")
+    @FindBy(xpath = "//span[@id='elementor-device-mode']//following::div[1]")
+    WebElement ChatPopUp;
+
+
+    @FindBy(xpath = "//*[@id='elementor-device-mode']//following::div[1]//iframe[1]")
+    WebElement ChatPopUpIframe;
+
+
+    @FindBy(xpath = "//input[@id='offline0Field' and @title='Name']")
     WebElement ChatName;
-    @FindBy(xpath = "//*[@id='offline1Field' and @title='Email']")
+    @FindBy(xpath = "//input[@id='offline1Field' and @title='Email']")
     WebElement ChatEmail;
-    @FindBy(xpath = "//*[@id='offline2Field' and @title='Message']")
+    @FindBy(xpath = "//textarea[@id='offline2Field' and @title='Message']")
     WebElement ChatMessage;
 
 
     @FindBy(xpath = "//button[@id='formSubmit' and text()='Submit' ]")
     WebElement btnSubmit;
 
+    @FindBy(xpath = "//div[@id='formContainer' and @class='has-required success']/descendant::div[2]/p")
+    WebElement SuccessMessage;
 
     public HomePage() {
         PageFactory.initElements(driver, this);
@@ -92,10 +108,9 @@ public class HomePage extends TestBase {
     }
 
 
-    public String getJobsHeader() {
+    public void scrolltoJobsHeader() {
         js.executeScript("arguments[0].scrollIntoView();", getHeaderNavJobsHeader);
-        String jobsHeader = getHeaderNavJobsHeader.getText();
-        return jobsHeader;
+
     }
 
 
@@ -105,90 +120,33 @@ public class HomePage extends TestBase {
     }
 
 
-    public void clickOnChatIcon(String cName) throws Exception {
-
-        new WebDriverWait(driver, 10)
-                .ignoring(StaleElementReferenceException.class)
-                .until(driver -> {
-                    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@title='chat widget'][2]")));
-                    WebDriver framdirever = driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='chat widget'][2]")));
-                    WebElement maximizeChat = framdirever.findElement(By.xpath("//span[@id='maximizeChat']"));
-                    //wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(maximizeChat));
-                    maximizeChat.click();
-                    ChatName.sendKeys(cName);
-                    return true;
-                });
-       /* ChatIcon.click();
-        wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(ChatIcon));
-        driver.switchTo().frame(ChatIcon);
-        int size = driver.findElements(By.tagName("iframe")).size();
-       List<WebElement> elements=driver.findElements(By.xpath("//*[@title='chat widget']"));
-
-        ArrayList a = new ArrayList();
-        //String a[]=new String[elements.size()];
-       for(WebElement element: elements){
-
-
-           String id = element.getAttribute("id");
-           a.add(id);
-
-           driver.switchTo().frame(id);
-           //actions.moveToElement(elements.get(i)).click().build().perform();
-           WebElement iframe = driver.findElement(By.id(id));
-           System.out.println(iframe.getText());
-*/
-           /*if(element.getText().contains("Send message")){
-
-               System.out.println( id+"Success!!!");
-           }
-           else {
-               System.out.println(id+" Failure");
-           }*/
-
+    public void clickOnChatIcon() throws Exception {
+        driver.switchTo().frame(ChatIconFrame);
+        ChatIcon.click();
     }
-        /*System.out.println(a);
-       for(int i=0;i<a.size();i++){
-       }
-        System.out.println(size);
-
-        driver.switchTo().frame(2);
-
-       actions.moveToElement(ChatIcon).click().build().perform();
-       Thread.sleep(2000);*/
 
 
-    public void searchIframe() {
-
-        System.out.println(">>>>>>>>Before Switch!!!");
-        int size = driver.findElements(By.tagName("iframe")).size();
-        System.out.println(size);
-        driver.switchTo().frame(ChatIframe);
-        System.out.println(">>>>>>>>After Switch!!!");
-        String frameElements = driver.findElement(By.xpath("//*[@title='chat widget'][1]")).getText();
-        System.out.println(frameElements);
-
+    public void clickOnChatPopUp() {
+        driver.switchTo().parentFrame();
+        ChatPopUp.click();
+        driver.switchTo().frame(ChatPopUpIframe);
     }
 
 
     public void setChatName(String Name) throws Exception {
-        searchIframe();
-        //clickOnChatIcon();
-        //List<WebElement> frameElements = driver.findElements(By.xpath("//iframe"));
-        //System.out.println(frameElements);
-        driver.switchTo().frame(ChatIframe);
-        //wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(ChatIcon));
-        actions.moveToElement(ChatName).sendKeys(Name).build().perform();
+
+        wait.until(ExpectedConditions.elementToBeClickable(ChatName)).clear();
+        ChatName.sendKeys(Name);
     }
 
     public void setChatEmail(String Email) {
         wait.until(ExpectedConditions.elementToBeClickable(ChatEmail)).clear();
-
-        actions.moveToElement(ChatEmail).sendKeys(Email);
+        ChatEmail.sendKeys(Email);
     }
 
     public void setChatMessage(String Message) {
-        wait.until(ExpectedConditions.elementToBeClickable(ChatEmail)).clear();
-        actions.moveToElement(ChatMessage).sendKeys(Message);
+        wait.until(ExpectedConditions.elementToBeClickable(ChatMessage)).clear();
+        ChatMessage.sendKeys(Message);
     }
 
 
@@ -197,9 +155,33 @@ public class HomePage extends TestBase {
     }
 
 
-    public void clickOnHeaderNavContact() {
-        HeaderNavContact.click();
+    public void verifySuccessMessage() {
+        String successMessageText = SuccessMessage.getText();
+        Assert.assertEquals(successMessageText, properties.getProperty("sucessMessage"));
+
     }
 
+    public void verifyAboutUsHeader() {
+        String successMessageText = getHeaderNavAboutHeader.getText();
+        Assert.assertEquals(successMessageText, properties.getProperty("aboutusHeader"));
+
+    }
+
+    public void verifyAboutUsDescription() {
+        String aboutDescriptionText = getHeaderNavAboutDescription.getText();
+        Assert.assertEquals(aboutDescriptionText, properties.getProperty("aboutusDescription"));
+        Assert.assertAll();
+    }
+
+    public void verifyJobsHeader() {
+        String jobsHeaderText = getHeaderNavJobsHeader.getText();
+        Assert.assertEquals(jobsHeaderText, properties.getProperty("jobsHeader"));
+        Assert.assertAll();
+    }
+
+    public void verifyJobsDescription() {
+        String jobsDescriptionText = getHeaderNavJobsDescription.getText();
+        Assert.assertEquals(jobsDescriptionText, properties.getProperty("jobsDescription"));
+    }
 
 }
